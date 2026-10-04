@@ -35,7 +35,7 @@ _LOGGER = logging.getLogger("huggingface_dataset")
 _LOGGER.info(
     "🤗 Hugging Face dataset custom nodes loaded (%d node) - JPEG XL image support: %s",
     len(NODE_CLASS_MAPPINGS),
-    "enabled ✅" if JPEG_XL_AVAILABLE else "disabled ❌",
+    "enabled ✅" if JPEG_XL_AVAILABLE else "disabled ❌ (you should consider installing the pillow-jxl-plugin)",
 )
 
 WEB_DIRECTORY = "./web"
